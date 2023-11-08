@@ -20,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.22.20",
+    "@cucumber/cucumber": "^10.0.1",
     "@wdio/appium-service": "^8.17.0",
     "@wdio/cli": "^8.17.0",
     "@wdio/cucumber-framework": "^8.17.0",
