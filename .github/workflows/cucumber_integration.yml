@@ -1,4 +1,4 @@
-name: Ejecución de Escenarios Cucumber
+name: Cucumber CI
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - develop
 
 jobs:
-  run-cucumber-tests:
-    runs-on: windows-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -22,4 +22,13 @@ jobs:
         run: npm install
 
       - name: Run Cucumber tests
-        run: node ejecutar_pruebas.js
+        run: npx cucumber-js ./features
+
+      - name: Generate HTML report
+        run: npx cucumber-html-reporter -o ./reports/cucumber_report.html -i ./reports/cucumber_report.json
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cucumber_report
+          path: ./reports/cucumber_report.html
