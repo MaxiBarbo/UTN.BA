@@ -22,4 +22,4 @@ jobs:
         run: npm install
 
       - name: Run Cucumber tests
-        run: npm test
+        run: node ejecutar_pruebas.js
