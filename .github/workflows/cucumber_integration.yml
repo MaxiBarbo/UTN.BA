@@ -1,0 +1,34 @@
+name: Cucumber CI
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Cucumber tests
+      run: npm test
+
+    - name: Generate HTML report
+      run: npx cucumber-html-reporter -o ./reports/cucumber_report.html -i ./reports/cucumber_report.json
+
+    - name: Upload report artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: cucumber_report
+        path: ./reports/cucumber_report.html
