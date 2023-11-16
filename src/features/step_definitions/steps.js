@@ -26,54 +26,34 @@ Before( { timeout: 100000 }, async () => {
   });
 });
 
-Given ('ingreso a la seccion dialogos', async()=>{
-  const registerButton = await driver.$(locators.btnDialogos);// localizamos el button de registro
-  registerButton.click();// hacemos click en el button de registro 
-})
+Given('realizo tap en contador de tenis y se abre {string}', async (text) => {
+  const btnTenisCount = await driver.$(locators.btnContadorTenis);// localizamos el button de registro
+  btnTenisCount.click();// hacemos click en el button de registro 
 
-When ('ingreso en el elemento Mensaje', async()=>{
-
-})
-
-Then ('compruebo {string}', async(text)=>{
-
-})
-
-// Escenario: Validacion de Eleccion
-
-When('ingreso en el elemento Eleccion', async ()=>{
-  // Implementación de ingreso en el elemento
 });
 
-Then('compruebo la opcion si', async ()=>{
-  // Implementación de comprobación de la opción
+When('realizo tap en jugador rojo y obtengo 15 en el tablero', async () => {
+console.log('se suman 15 puntos en rojo')
+
 });
 
-Then('compruebo la opcion no', async ()=>{
-  // Implementación de comprobación de la opción
+When('realizo tap x n° {int} para ganar el set el jugador red', async (veces) => {
+  // Código para interactuar con el botón de inicio de sesión
+  // const boton = await driver.$(locators.redTap);
+  const elemento = await driver.$(locators.redTap);
+
+  for (let i = 0; i < veces; i++) {
+    await elemento.click();
+    
+  }
+
 });
 
+Then('el jugador 2 ha ganado 1 set y muestra {string}', async (texto) => {
+  const textoGame2 = await driver.$(locators.textwin)
+  const textObtenido = await textoGame2.getText()
+  console.log(textObtenido)
+  
+  expect(textObtenido).to.include(texto)
 
-// Escenario: Validacion Contraseña
-
-When('ingreso en el elemento Contraseña', async ()=>{
-  // Implementación de ingreso en el elemento
-});
-
-Then('completo con la contraseña {string}', async (contrasena)=>{
-  // Implementación de ingreso de contraseña
-});
-
-Then('acepto el ingreso', async ()=>{
-  // Implementación de aceptar el ingreso
-});
-
-// Escenario: Validacion Alerta
-
-When('ingreso en el elemento Alerta', async ()=>{
-  // Implementación de ingreso en el elemento
-});
-
-Then('veo un mensaje de {string}', async (mensaje)=>{
-  // Implementación de verificación del mensaje
 });
