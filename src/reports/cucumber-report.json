@@ -1,0 +1,271 @@
+[
+  {
+    "description": "    Como usario de la apk12\n    Quiero probar los textos\n    Para practicar testing Mobile",
+    "elements": [
+      {
+        "description": "",
+        "id": "pruebas-en-seccion-de-dialogos;validacion-de-mensaje",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validacion de Mensaje",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14017617600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "ingreso a la seccion dialogos",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 947629399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "ingreso en el elemento Mensaje",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5451200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "compruebo \"Este es tu mensaje\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7344400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "pruebas-en-seccion-de-dialogos;validacion-de-eleccion",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Validacion de Eleccion",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9073602099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "ingreso a la seccion dialogos",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 476210100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "ingreso en el elemento Eleccion",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4054099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "compruebo la opcion si",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1921300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "compruebo la opcion no",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1968800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "pruebas-en-seccion-de-dialogos;validacion-contraseña",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Validacion Contraseña",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7933201799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "ingreso a la seccion dialogos",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1233199599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "ingreso en el elemento Contraseña",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6105099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "completo con la contraseña \"Abcd1234*\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6720299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "acepto el ingreso",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2617899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "pruebas-en-seccion-de-dialogos;validacion-alerta",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Validacion Alerta",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7849046300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "ingreso a la seccion dialogos",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1164075800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "ingreso en el elemento Alerta",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3544200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "veo un mensaje de \"!Algo esta pasando¡\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3519899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "pruebas-en-seccion-de-dialogos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Pruebas en seccion de Dialogos",
+    "tags": [],
+    "uri": "src\\features\\dialogos.feature"
+  }
+]
