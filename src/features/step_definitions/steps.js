@@ -15,7 +15,7 @@ Before( { timeout: 100000 }, async () => {
       'appium:platformName': 'Android',
       'appium:platformVersion': '13',
       'appium:automationName': 'UiAutomator2',
-      'appium:app':'Z:/Testing QA/UTN.BA-TestingQA/Curso Testing Avanzado UTN.BA/Modulo 2/app/TestingAvanzadoApp12.apk',
+      'appium:app':'Z:/Testing QA/UTN.BA-TestingQA/src/app/TestingAvanzadoApp12.apk',
       'appium:appPackage': 'appinventor.ai_nicholais123.TestingAvanzadoApp',
       'appium:enforceXPath1': true,
       // 'appium:appActivity': '.MyActivity',
