@@ -1,0 +1,84 @@
+[
+  {
+    "description": "    Como usuario de la apk.12 del curso UTN.BA\n    Quiero hacer un ejercicio en la opcion de Contador de tenis\n    Para practicar pruebas automatizadas",
+    "elements": [
+      {
+        "description": "",
+        "id": "contador-de-tenis;obtener-un-ganador",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Obtener un ganador",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23117711600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "realizo tap en contador de tenis y se abre \"Tanteador de tenis\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1178772900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "realizo tap en jugador rojo y obtengo 15 en el tablero",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5119300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "realizo tap x n° 4 para ganar el set el jugador red",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4574016100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "el jugador 2 ha ganado 1 set y muestra \"Game Jugador 2\"",
+            "match": {
+              "location": "src\\features\\step_definitions\\steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 844201199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "contador-de-tenis",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Contador de tenis",
+    "tags": [],
+    "uri": "src\\features\\contador_tenis.feature"
+  }
+]
